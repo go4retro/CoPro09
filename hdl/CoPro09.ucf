@@ -5,10 +5,13 @@ NET "_ce_dat"  LOC = "P128"  ;
 NET "_ce_ram"  LOC = "P10"  ; 
 NET "_enbus"  LOC = "P124"  ; 
 NET "_exrom"  LOC = "P41"  ; 
+NET "_firq_09"  LOC = "P115"  ;
 NET "_game"  LOC = "P39"  ; 
 NET "_halt_09"  LOC = "P107"  ; 
 NET "_io<1>"  LOC = "P34"  ; 
 NET "_io<2>"  LOC = "P44"  ; 
+NET "_irq_09"  LOC = "P111"  ;
+NET "_nmi_09"  LOC = "P110"  ;
 NET "_reset"  LOC = "P25"  ; 
 NET "_reset_09"  LOC = "P116"  ; 
 NET "_we_mem"  LOC = "P139"  ; 
@@ -76,14 +79,14 @@ NET "dotclk"  LOC = "P32"  ;
 NET "led"  LOC = "P105"  ; 
 NET "r_w"  LOC = "P28"  ; 
 NET "r_w_09"  LOC = "P126"  ; 
-NET "test<0>"  LOC = "P101"  ;
-NET "test<1>"  LOC = "P102"  ;
-NET "test<2>"  LOC = "P96"  ;
-NET "test<3>"  LOC = "P97"  ;
-NET "test<4>"  LOC = "P92"  ;
-NET "test<5>"  LOC = "P93"  ;
-NET "test<6>"  LOC = "P86"  ;
-NET "test<7>"  LOC = "P87"  ;
+NET "test<0>"  LOC = "P101"  ; 
+NET "test<1>"  LOC = "P102"  ; 
+NET "test<2>"  LOC = "P96"  ; 
+NET "test<3>"  LOC = "P97"  ; 
+NET "test<4>"  LOC = "P92"  ; 
+NET "test<5>"  LOC = "P93"  ; 
+NET "test<6>"  LOC = "P86"  ; 
+NET "test<7>"  LOC = "P87"  ; 
 
 #PACE: Start of PACE Area Constraints
 

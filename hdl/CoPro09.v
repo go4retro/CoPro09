@@ -45,9 +45,9 @@ module CoPro09(
                //input bs_09,
                //input avma_09,
                //input lic_09,
-               //output _irq_09,
-               //output _nmi_09,
-               //output _firq_09,
+               output _irq_09,
+               output _nmi_09,
+               output _firq_09,
                output _halt_09,
                //input sw0,
                output led,
@@ -59,26 +59,32 @@ reg [2:0]ctr;
 reg clock_prev;
 reg [7:0]data_cpu_out;
 reg [7:0]data_mem_out;
+wire [6:0]page;
 
 assign test[0] =              clock;assign test[1] =              dotclk;assign test[2] =              clock_q;assign test[3] =              clock_e;assign test[4] =              dotclk;assign test[5] =              dotclk;assign test[6] =              dotclk;assign test[7] =              dotclk;
 
 
 assign ce_regbase =        !_io[2] & (address_cpu[7:4] == 4'hf) & (address_cpu[3:2] == 2'b11);
 assign ce_config =         ce_regbase & (address_cpu[1:0] == 0);
-//assign ce_task =           ce_regbase & (address_cpu[1:0] == 1);
+assign ce_page =           ce_regbase & (address_cpu[1:0] == 1);
 //assign ce_task_page =      ce_regbase & (address_cpu[1:0] == 2);
 //assign ce_extra =          ce_regbase & (address_cpu[1:0] == 3);
-assign _enbus =            1; // for now, it's active on low half of phi2
+assign _enbus =            !(_reset_09 & _halt_09 & clock_e); // for now, it's active on low half of phi2
 assign clock_e =           !clock;
 assign clk_cfg =           2'b11; // *8
 assign _game =             'bz;
 assign _exrom =            'bz;
 assign data_cpu =          data_cpu_out;assign data_mem =          data_mem_out;
 assign clock_q =           (ctr[2] ^ ctr[1]);
+assign _irq_09 =           1;
+assign _nmi_09 =           1;
+assign _firq_09 =          1;
 
 register #(.WIDTH(1))      reg_led(clock, !_reset, ce_config & !r_w, data_cpu[0], led);
 register #(.WIDTH(1))      reg_reset(clock, !_reset, ce_config & !r_w, data_cpu[7], _reset_09);
 register #(.WIDTH(1))      reg_halt(clock, !_reset, ce_config & !r_w, data_cpu[6], _halt_09);
+
+register #(.WIDTH(7))      reg_page(clock, !_reset, ce_page & !r_w, data_cpu[6:0], page);
 
 always @(*)
 begin
@@ -117,9 +123,9 @@ end
 always @(*)
 begin
    if(clock & _io[1])
-      address_mem = address_cpu[7:0];
+      address_mem = {page, address_cpu[7:0]};
    else
-      address_mem = 18'bz;
+      address_mem = {6'b0,13'bz};
 end
 
 always @(negedge dotclk)
