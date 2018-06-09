@@ -21,8 +21,126 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="CoPro09.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="CoPro09.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="CoPro09.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="CoPro09.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="CoPro09.jed"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="CoPro09.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="CoPro09.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="CoPro09.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="CoPro09.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="CoPro09.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="CoPro09.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="CoPro09.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="CoPro09.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CoPro09.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CoPro09.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="CoPro09.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="CoPro09.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CoPro09.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CoPro09.tspec"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="CoPro09.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CoPro09.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="CoPro09.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CoPro09_build.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="CoPro09_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CoPro09_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="CoPro09_pad.csv"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CoPro09_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="register.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="register.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="register.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="register.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="register.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="register.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="register.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="register.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="register_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1528259692" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1528259692">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528513118" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3169833650700398509" xil_pn:start_ts="1528513118">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528515407" xil_pn:in_ck="2815114431988519929" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-402811534722481587" xil_pn:start_ts="1528515401">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CoPro09.lso"/>
+      <outfile xil_pn:name="CoPro09.ngc"/>
+      <outfile xil_pn:name="CoPro09.ngr"/>
+      <outfile xil_pn:name="CoPro09.prj"/>
+      <outfile xil_pn:name="CoPro09.stx"/>
+      <outfile xil_pn:name="CoPro09.syr"/>
+      <outfile xil_pn:name="CoPro09.xst"/>
+      <outfile xil_pn:name="CoPro09_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="register.ngr"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1528513359" xil_pn:in_ck="107884983274118328" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1262981220916608942" xil_pn:start_ts="1528513359">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528515412" xil_pn:in_ck="-4686448576899970571" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="-4251716299155370538" xil_pn:start_ts="1528515407">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CoPro09.bld"/>
+      <outfile xil_pn:name="CoPro09.ngd"/>
+      <outfile xil_pn:name="CoPro09_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1528515425" xil_pn:in_ck="107884983274110835" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="-5169115634745452450" xil_pn:start_ts="1528515412">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CoPro09.gyd"/>
+      <outfile xil_pn:name="CoPro09.mfd"/>
+      <outfile xil_pn:name="CoPro09.nga"/>
+      <outfile xil_pn:name="CoPro09.pad"/>
+      <outfile xil_pn:name="CoPro09.pnx"/>
+      <outfile xil_pn:name="CoPro09.rpt"/>
+      <outfile xil_pn:name="CoPro09.tim"/>
+      <outfile xil_pn:name="CoPro09.tspec"/>
+      <outfile xil_pn:name="CoPro09.vm6"/>
+      <outfile xil_pn:name="CoPro09.xml"/>
+      <outfile xil_pn:name="CoPro09_build.xml"/>
+      <outfile xil_pn:name="CoPro09_html"/>
+      <outfile xil_pn:name="CoPro09_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1528515427" xil_pn:in_ck="107884983274119699" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1528515425">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CoPro09.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1528511182" xil_pn:in_ck="107884983274106413" xil_pn:name="TRAN_impactProgrammingTool_CPLD" xil_pn:prop_ck="-8487078306172248444" xil_pn:start_ts="1528511182">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1528259722" xil_pn:in_ck="107884983274119699" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1528259719">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
 
 </generated_project>
